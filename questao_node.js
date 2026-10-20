@@ -7,10 +7,10 @@ caminhao = {
 console.log("\nBom dia " + caminhao.motorista + " tenha ótimas entregas hoje!")
 
 for (let i = 1; i <= 4; i++) {
-    paradas = i * 10;
+    let paradas = i * 10;
     caminhao.cargaRestante -= paradas;
 
-    if(caminhao.cargaRestante <= caminhao.limiteRetorno) {
+    if (caminhao.cargaRestante <= caminhao.limiteRetorno) {
         console.log("\nALERTA: Retorne ao CD(centro de distribuição) imediatamente!!!");
         break
     } else {
